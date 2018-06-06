@@ -1,11 +1,11 @@
 package com.zxyb;
 
-import com.zxyb.zhconverter.ZhConverter;
+import com.zxyb.zhconverter.ZHConverter;
 
 public class MainTest {
 
 	public static void main(String[] args) {
-		ZhConverter converter = ZhConverter.init(ZhConverter.Target.ZH);
+		ZHConverter converter = ZHConverter.getInstance(ZHConverter.ZH);
 		String simplifiedStr = converter.convert("興奮生意");
 		System.out.println(simplifiedStr);
 	}
